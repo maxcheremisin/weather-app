@@ -1,0 +1,81 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "extends": [
+        "airbnb-base",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended",
+        "prettier/@typescript-eslint",
+        "prettier/react"
+    ],
+    "plugins": ["@typescript-eslint", "react", "react-hooks"],
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "rules": {
+        "eqeqeq": "off",
+        "no-void": "off",
+        "no-console": "off",
+        "no-plusplus": "off",
+        "no-continue": "off",
+        "no-sequences": "off",
+        "no-debugger": "warn",
+        "no-return-assign": "off",
+        "no-throw-literal": "off",
+        "no-nested-ternary": "off",
+        "consistent-return": "off",
+        "no-param-reassign": "off",
+        "prefer-destructuring": "off",
+        "no-underscore-dangle": "off",
+        "no-restricted-syntax": "off",
+        "array-callback-return": "off",
+        "no-dupe-class-members": "off",
+        "class-methods-use-this": "off",
+        "no-useless-constructor": "off",
+        "lines-between-class-members": "off",
+        "prefer-promise-reject-errors": "off",
+        "quotes": ["error", "single", {"allowTemplateLiterals": true}],
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
+        "import/no-default-export": "error",
+        "import/prefer-default-export": "off",
+        "react/jsx-key": "warn",
+        "react/no-danger": "off",
+        "react/sort-comp": "off",
+        "react/prop-types": "off",
+        "react/display-name": "off",
+        "react/jsx-uses-vars": "warn",
+        "react/no-find-dom-node": "off",
+        "react/no-children-prop": "off",
+        "react/no-array-index-key": "off",
+        "react/state-in-constructor": "off",
+        "react/no-unescaped-entities": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/destructuring-assignment": "off",
+        "react/jsx-curly-brace-presence": "error",
+        "react/jsx-closing-tag-location": "error",
+        "react/prefer-stateless-function": "warn",
+        "react/jsx-no-duplicate-props": ["error", {"ignoreCase": false}],
+        "react/jsx-filename-extension": ["error", {"extensions": [".tsx"]}],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-empty-interface": "off",
+        "@typescript-eslint/no-use-before-define": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-unused-vars": ["warn", {"args": "after-used", "ignoreRestSiblings": true}],
+        "prettier/prettier": ["error", {"endOfLine": "auto"}]
+    }
+}
